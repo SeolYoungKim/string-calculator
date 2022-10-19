@@ -5,12 +5,9 @@ public class NumberAndOperator {
     private final List<Integer> numbers = new ArrayList<>();
     private final List<Character> operators = new ArrayList<>();
 
-    public void addNumbers(Integer number) {
-        this.numbers.add(number);
-    }
-
-    public void addOperators(Character operator) {
-        this.operators.add(operator);
+    public NumberAndOperator(List<Integer> numbers, List<Character> operators) {
+        this.numbers.addAll(numbers);
+        this.operators.addAll(operators);
     }
 
     public List<Integer> getNumbers() {

@@ -1,3 +1,5 @@
+import exception.IllegalOperatorException;
+
 import java.util.List;
 
 public class Calculator {
@@ -28,6 +30,6 @@ public class Calculator {
                 return prev / next;
         }
 
-        throw new IllegalArgumentException("연산자가 잘못 입력되었습니다.");
+        throw new IllegalOperatorException();
     }
 }
